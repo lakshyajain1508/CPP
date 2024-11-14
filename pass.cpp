@@ -47,7 +47,7 @@ int main()
             cout << "Try next year";
         }
     }
-    else if (pass2 == pass)
+    else if (pass2 != pass)
 
     {
         string pass3;
@@ -88,7 +88,7 @@ int main()
         }
     }
 
-    else if (pass2 == pass)
+    else if (pass2 != pass)
     {
         string pass4;
         cout << "wrong password ... try 2 more time out of 2\n";
