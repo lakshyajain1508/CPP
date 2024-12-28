@@ -18,11 +18,11 @@ class MarkSheet{
         return total;
     }
     
-    public : int percent(int java, int python, int cpp, int html, int css){
+    public : float percent(int java, int python, int cpp, int html, int css){
         
-        int total = java+python+cpp+css+html;
-        int percent = (total/5)*100;
-        return percent;
+        float totals = java+python+cpp+css+html;
+        float percentage = (totals/500)*100;
+        return percentage;
     }
    
 };
@@ -41,7 +41,7 @@ int main(){
     cin>>css;
     MarkSheet m;
     m.marks(java,python,cpp,html,css);
-    cout<<"Total Marks = "<<m.total(java,python,cpp,html,css);
-    cout<<"Total Percentage = "<<m.total(java,python,cpp,html,css)<<"%";
+    cout<<"Total Marks = "<<m.total(java,python,cpp,html,css)<<endl;
+    cout<<"Total Percentage = "<<m.percent(java,python,cpp,html,css)<<"%";
     return 0;
 }
