@@ -24,7 +24,25 @@ class MarkSheet{
         float percentage = (totals/500)*100;
         return percentage;
     }
-   
+    
+    public : char grade(int java, int python, int cpp, int html, int css){
+        
+        float totals = java+python+cpp+css+html;
+        float percentage = (totals/500)*100;
+        if(percentage>=90){
+            cout<<"Grade A";
+        }
+        else if(percentage>=75){
+            cout<<"Grade B";
+        }
+        else if(percentage >=35){
+            cout<<"Grade C";
+        }
+        else
+        {
+            cout<<"Fail";
+        }
+    }
 };
 
 int main(){
@@ -42,6 +60,7 @@ int main(){
     MarkSheet m;
     m.marks(java,python,cpp,html,css);
     cout<<"Total Marks = "<<m.total(java,python,cpp,html,css)<<endl;
-    cout<<"Total Percentage = "<<m.percent(java,python,cpp,html,css)<<"%";
+    cout<<"Total Percentage = "<<m.percent(java,python,cpp,html,css)<<"%"<<endl;
+    cout<<"Grade = "<<m.grade(java,python,cpp,html,css);
     return 0;
 }
