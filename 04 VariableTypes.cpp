@@ -8,7 +8,6 @@ int globalVar = 20; // Global variable declaration (default initialized to 0)
 void staticFunction() {
     static int staticVar = 30; // Static variable declaration (initialized only once)
     cout << "Static Variable inside function: " << staticVar << endl;
-    // Incrementing the static variable
 }
 
 int main(){
