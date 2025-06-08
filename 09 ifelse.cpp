@@ -19,5 +19,5 @@ int main(){
         cout<<num<<" is negative.";
     }
     
-
+    return 0;
 }
