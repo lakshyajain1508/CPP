@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to "Codes with Pankaj," your go-to resource for mastering programming concepts. In this tutorial, we'll delve into the fundamentals of C++, a powerful and versatile programming language.
+C++ is a powerful and versatile programming language.
 
 ### What is C++?
 
