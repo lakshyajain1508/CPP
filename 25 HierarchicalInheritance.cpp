@@ -1,49 +1,34 @@
 #include<iostream>
 using namespace std;
 
-    // Hybrid Inheritance - In hierarchical inheritance, multiple classes are derived from a single base class. This forms a tree-like structure.
-
-class Book{ // Base class members
+    // Hierarchical Inheritance 
+class car{  // Base class members
     public:
-        void bookFunction(){
-            cout << "Book Function" << endl;
+        void carFunction(){
+            cout << "Car Function" << endl;
+        }
+};    
+
+class bike : public car{     // Derived1 class members
+    public:
+        void bikeFunction(){
+            cout << "Bike Function" << endl;
         }
 };
 
-class Author{ // Base class members
+class truck : public car{    // Derived2 class members
     public:
-        void authorFunction(){
-            cout << "Author Function" << endl;
-        }
-};
-
-class Publisher{ // Base class members
-    public:
-        void publisherFunction(){
-            cout << "Publisher Function" << endl;
-        }
-};
-
-class BookDetails : public Book , public Author , public Publisher{  // Derived1 class members
-    public:
-        void bookDetailsFunction(){
-            cout << "Book Details Function" << endl;
-        }
-};
-
-class price : public BookDetails{  // Derived2 class members
-    public:
-        void priceFunction(){
-            cout << "Price Function" << endl;
+        void truckFunction(){
+            cout << "Truck Function" << endl;
         }
 };
 
 int main(){
-    price p;
-    p.bookFunction();
-    p.authorFunction();
-    p.publisherFunction();
-    p.bookDetailsFunction();
-    p.priceFunction();
+    bike b;
+    truck t;
+    b.carFunction();
+    b.bikeFunction();
+    t.carFunction();
+    t.truckFunction();
     return 0;
 }
